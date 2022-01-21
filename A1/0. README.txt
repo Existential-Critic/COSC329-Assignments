@@ -1,0 +1,9 @@
+1. First import all the respective libraries I will need; in this case, they are re, string, glob, and statistics(mean)
+
+2. Create the preprocess function. This is done by reading the document and splitting it on each of the punctuation marks, making everything lowercase, substituting all contractions, and then removing special characters. Finally, write all lines into a new test document
+
+3. Create the printFileInfo function. This is done by reading the test file created in preprocess, and going line by line summing words, sentences, and calculating syllables.
+
+4. Now we must add all the relevant files to a list so our methods can be looped. Using glob, make a list of all m-*.txt files and all ng-*.txt files, and concatenate them into a single list.
+
+5. Lastly, we make a loop for each f in our filename list, and run the preprocess and printFileInfo functions for each filename in our list.

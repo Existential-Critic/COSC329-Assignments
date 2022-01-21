@@ -1,0 +1,15 @@
+1. First, process each file by utilizing a function that splits each sentence into a new item in a list, removing empty items, and then removing all unnecessary characters and making the strings all lowercase
+
+2. Save all the files into a list, for use later on
+
+3. Get the ngrams for each file, for every value of n, and save them to a variable
+
+4. Save all the ngrams into a superlist, along with a name to identify
+
+5. Write the ngrams for each file into a new file, detailing which ngrams are for which value of n
+
+6. Open a csv file and write a header into it, with x columns where x is the largest number of n in all files
+
+7. For each file, get the containment of its ngrams and every other files' ngrams for every value of n
+
+8. Save the csv and close it

@@ -1,0 +1,9 @@
+1. Open and run preprocessingA3.py, this file will take the unprocessed text files, replace the colons with commas, and then turn the new text document into a csv document.
+
+2. Open inferenceBN.m, modelStructure.m, populateCPTs.m, accuracyPR.m, timePR.m, needHelpPR.m, and confusedPR.m in MATLAB
+
+3. Make sure that the BNT package is set up on your system, then run inferenceBN.
+
+inferenceBN first runs modelStructure, which creates the basic layout of the Bayes Net and sets the directions of the nodes. Once this is done, it then populates the CPTs. Difficulty is set with a uniform distribution, while accuracy and time and made by calculating the data in the csv files. NeedHelp and Confused have their reasoning listed in the comments of their respective files.
+Once all of this is done, inferenceBN then creates an engine, sets the evidence, and prints the result of Pr(NeHe=true|Con=true).
+It then will reset the engine, provide new evidence, and print the result of Pr(NeHe=true|Con=true,Time=slow,Acc=high).

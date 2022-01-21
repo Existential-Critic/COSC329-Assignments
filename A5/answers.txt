@@ -1,0 +1,11 @@
+1. b.txt and g.txt are very clearly plagiarized verbatim, especially when looking at how their containment values for eachother are exactly 1.
+
+2. Of the other files, y.txt and h.txt have a containment value of almost 0.5. I believe that this warrants further investigation by a human.
+
+3. As n increased, CN(A,B) becomes smaller and smaller. This is because the intersection is decreasing, as the more words we include for an ngram the more unique it will be.
+
+4. If we were to apply stemming, I would expect the containment values to increase. This is because different words in different sets would be transformed into the same word, meaning that the intersection of the two sets increases.
+
+5. I believe for paragraphs this short, using n = 2 or n = 3 is appropriate to assess plagiarism. There are not that many sentences, and not that many words per sentence to assess.
+
+6. For n = 2, I believe that a good value of CN(A,B) to determine definite plagiarism would be 0.9, while the value to determine likely to be plagiarized would be 0.4 or 0.45.

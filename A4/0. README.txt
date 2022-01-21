@@ -1,0 +1,9 @@
+1. mk_needhelp is made utilizing code from mk_hints. It will return a dynamic Bayes net with associated CPTs and probability values included in the file itself.
+
+2. sim_help_decision is made utilizing code from sim_hint_decision. Dependent on the provided DBN and ex value, it will return graphs of randomness, fixed evidence, or controlled randomness.
+
+3. sampleHelp_seq, util_help, and get_meu_help are utilized as helper functions for sim_help_decision, with justification included in the files.
+
+4. sim_both is made utilizing code from both sim_hint_decision and sim_help_decision, as are its helper function get_meu.
+
+5. All graphs are included in the Graphs folder. sim_both's graphs are each an individual image, while the 6 fixed evidence graphs for sim_help_decision are all joined into one image.

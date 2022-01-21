@@ -1,0 +1,19 @@
+1. Add all files from the unprocessed folder to a list, then iterate through the list and preprocess each document and save it to the preprocessed folder.
+
+2. Get a list of every unique word from all documents by iterating through the processed file list and reading each preprocessed file.
+
+3. Make 3 functions to get a document's specific word list, a document's word vectors based on the total word list, and the word count of a specific document.
+
+4. Iterate through each document to get their respective word vectors, then convert the word vectors into a tf list and save the list to a list of all document TF values
+
+5. Iterate through each word in the total word list and get their respective IDF values, saving the IDF values to a list of all IDF values in the same order as the total word list.
+
+6. Create method to compare the cosine similarity of two given documents. Given the same document, will return 1.
+
+7. Create a matrix of each document's cosine similarity values, with each row being for one document.
+
+8. Print a tabulated version of the cosine matrix to a new text file, cosineMatrix.txt.
+
+9. Use the AgglomerativeClustering method to cluster the cosine matrix where k = 2, then print the results of it to a new text file, clusteringResults.txt (0 being cluster 1, 1 being cluster 2)
+
+10. Using plt and scipy.cluster.hierarchy, create a dendrogram of the cosine matrix and save it as an image.
