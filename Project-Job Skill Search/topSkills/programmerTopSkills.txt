@@ -1,0 +1,10 @@
+computer
+communication
+engineering
+responsibility
+testing
+programming
+javascript
+c
+security
+java

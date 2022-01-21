@@ -1,0 +1,41 @@
+INDEED.CA BEST SUITED SKILLS TOOL
+
+SCHEDULE:
+Week 9 - Determine code to access indeed.ca and download job postings
+	-This step relates to the file scrapeIndeed.py, see step 1
+Week 10 - Research NLP libraries and determine code to preprocess job postings
+	-This step relates to the file descriptionSkillProcessing.py, see step 2
+Week 11 - Research methods of extracting skills and implement in code
+	-This step also relates to the file descriptionSkillProcessing.py, see step 2
+Week 12 - Finalize project and ensure it can print a list of jobs with their respective top skills
+	-This step relates to both the file descriptionSkillprocessing.py and the file overlapCalculation.py, see steps 2 and 3
+Week 13 - Record and submit video on my code and how it works
+	-This step relates to the halfway presentation, see at this link: https://drive.google.com/file/d/1Xq1RrLwmaJKxtMasqDYx9RuidzSj7MGn/view
+Week 14 - Final checks and submit
+
+CODE FILES
+1. scrapeIndeed.py
+	-This file meant to access Indeed.ca and save the job descriptions of 10,000 job postings. For full documentation, please see the attached report, pg. 4-7.
+	-To run the file, create a new line and write "createRecord('JOB_TITLE',jobRecords)". Replace JOB_TITLE with which ever job title you wish. It can be more than one word.
+	-The file will begin to run, accessing Indeed.ca and writing down the descriptions of every job found for the provided job description. It will eventually have to stop due to captchas, but if this occurs it will save its current location for further searching.
+	-You may continue to run the file so that it searches multiple times for your job title. Once every job opening has been found, the file will stop and tell us to move on to a new job title.
+
+2. descriptionSkillProcessing.py
+	-This file is meant to take the saved job descriptions in jobResults.csv and process all of the text, then comparing them to the list of skills and tallying how many descriptions contain each skill. For full documentation, please see the attached report, pg. 8-13.
+	-The file is fully set up with functions to take care of all needs, and a variety of calls.
+	-After reading the csv file and saving it to a dataframe, the file will go through each step:
+		-Processing the text of each description
+		-Saving the job skills to a list
+		-Saving the row indexes for each job title
+		-Getting the counts for each skill for each job title
+		-Sorting the above list to get the top 10 skills
+		-Saving the skill counts and the top skills to their respective files
+
+3. overlapCalculation.py
+	-This file is meant to take in the skill counts for each job title, save them with their job title, and then calculate their similarity/overlap using the Bhattacharyya coefficient. For full documentation, please see the attached report, pg. 14-16.
+	-The file is fully set up with functions to take care of all needs and a variety of calls.
+	-The file will make a Python dictionary for each job title's skill count and then save them all into a nested list, with each sublist containing the job title itself and the skill count dictionary.
+	-The nested list will then be inputted to get a matrix of Bhattacharyya coefficient values, which is then saved into a csv file so that we can review it.
+
+OVERVIEW
+At current, there is no buggy code. There are some inefficient parts which, given more time, could be ironed out and perfected. There are no missing steps, but similar to the efficient code, given more time more steps could be introduced in order to increase efficiency.
